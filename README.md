@@ -12,8 +12,8 @@ sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -
 
 ```bash
 docker run \                                           
-  -e 'PIHOLE_HOSTNAME=192.168.1.12' \
-  -e 'PIHOLE_PASSWORD=3KceXQik' \
+  -e 'PIHOLE_HOSTNAME=IP' \
+  -e 'PIHOLE_PASSWORD=password' \
   -e 'PORT=9617' \
   -p 9617:9617 \
   ekofr/pihole-exporter:latest
@@ -26,8 +26,8 @@ docker run \
     --name=bitcoin-exporter \
     -p 9332:9332 \
     -e BITCOIN_RPC_HOST=192.168.1.3 \
-    -e BITCOIN_RPC_USER=bitcoin \
-    -e BITCOIN_RPC_PASSWORD=bitcoin \
+    -e BITCOIN_RPC_USER=user \
+    -e BITCOIN_RPC_PASSWORD=password \
     jvstein/bitcoin-prometheus-exporter:v0.7.0
 
 ```
