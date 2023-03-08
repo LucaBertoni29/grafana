@@ -22,7 +22,7 @@ docker run \
      prom/prometheus
 ```
 
-## Installazione Dashboard Bitcoin
+## Dashboard Bitcoin
 
 ```bash
 docker run \
