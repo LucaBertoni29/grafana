@@ -15,7 +15,7 @@ services:
     #  - "9042"
     restart: unless-stopped
     environment:
-      USERNAME: Luca
-      PASSWORD: AXp9oBoVAgeeLUKtEc
+      USERNAME: User
+      PASSWORD: Password
       GATEWAY_URL: http://192.168.1.1:49000
       LISTEN_ADDRESS: 0.0.0.0:9042
